@@ -18,11 +18,20 @@ header
 	background: pink; /*fondo*/
 	border: 1px solid black; /*alrededor*/
 	border-radius: 5px; /*esquinas*/
+	box-shadow: 5px 5px black;
 	color: white; /*letra*/
 }
 header h1
 {
+	text-shadow: 5px 5px 10px white;
 	text-align: center;
+}
+header img
+{
+	float: right;
+	margin-right: 20px;
+	margin-top: 25px;
+	width: 80px;
 }
 
 header nav ul li
@@ -30,13 +39,26 @@ header nav ul li
 	/*border: 1px solid #A60C30;*/
 	background: #D8D8D7; /*transparente rgba(255,255,255)*/
 	border-radius: 5px;
+	box-shadow: -5px -5px black;
 	display: inline-block; /*rompe caja*/
 	color: black;
-	margin:0px 50px;
+	margin:0px 35px;
 	padding: 10px;
 }
 header nav ul li:hover
 {
 	background: black;
 	color: white;
+}
+/*AQUÍ VAN LOS ID'S*/
+#seccion1
+{
+	border: 10px solid red;
+}
+#seccion1 article
+{
+	border: 10px solid black;
+	display: inline-block;
+	vertical-align: top;
+	width: 47.8%;
 }
