@@ -44,7 +44,6 @@ header nav
 	width: 99%;
 }
 
-
 #logo
 {
 	margin-top: -250px;
@@ -59,4 +58,35 @@ header nav
 	border: 5px solid rgba(150,150,150,0.5);
 	margin-top: 10px;
 	width: 98%;
+}
+#seccion02
+{
+	margin:0 auto;
+}
+
+#seccion02 article
+{
+	display: inline-block;
+	vertical-align: top; /*los articule se suben*/
+	width: 32.8%
+}
+
+#seccion02 article input
+{
+	border-radius: 4px;
+	background: white;
+	color: blue;
+	margin-left: 40%;
+}
+.otraSeccion,.unaSeccion
+{
+	font-weight: bold; /*negritas*/
+}
+.otraSeccion
+{
+	font-size: 2.5em;
+}
+.unaSeccion
+{
+	font-size: 4.5em;
 }
