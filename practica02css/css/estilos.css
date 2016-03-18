@@ -1,0 +1,93 @@
+body
+{
+	/*border: 1px solid red;*/ /*borde alrededor*/
+	font-size: 16px; /*fuente*/
+	margin: 0 auto;
+	max-width: 1078px; /*el diseñador quiso 1078, lo correcto es 1024*/
+}
+
+header input
+{
+	float: right; /*para que el search se mueva hacia la derecha*/
+	margin-right: -240px; 
+	position: relative;
+}
+
+header nav
+{
+	margin-left: 220px;
+}
+
+header nav ul li
+{
+	border-bottom: 1px solid gray;
+	color: gray;
+	display: inline-block;
+	font-size: 1.2em;
+	margin-right: 15px;
+}
+#bgoffer
+{
+	left: 20%;
+	/*left,top,bottom, right*/
+	position: absolute;
+	top: 150px;
+}
+
+#granthams
+{
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+#paint
+{
+	float: right; /*para que la imagen se mueva hacia la derecha*/
+	margin-top: 20px; /*se le da un margen y la imagen se baja*/
+}
+
+#primerSeccion
+{
+	margin-top: 80px;
+}
+
+#primerSeccion article
+{
+	/*border:1px solid red;*/
+	display: inline-block;
+	margin-left: 25px;
+	vertical-align: top;  /*SIEMPRE QUE ALINIEMOS UN ARTICLE VA UN VERTICAL-ALIGN*/
+}
+
+#secc01art01
+{
+	width: 60%;
+}
+
+#secc01art02
+{
+	width: 30%; 
+}
+#segundaSeccion article
+{
+	text-align: right;
+}
+
+.numerotelefono
+{
+	color: #FF0099;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#terceraSeccuib article img
+{
+	vertical-align: middle;
+}
+	
+.wecanoffer
+{
+	color: #FF0099; /*color rosa*/
+	font-size: 3.5em;
+	font-weight: bold;
+}
