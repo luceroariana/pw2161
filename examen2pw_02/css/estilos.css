@@ -1,0 +1,74 @@
+body
+{
+	border: 1px solid pink;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+header nav ul li
+{
+	color: black;
+	display: inline-block;
+	font-size: 1em;
+	margin-right: 10px;
+}
+#encabezado
+{
+	color: #16B4A4;
+	display: inline-block;
+	float: right;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin-right: 30px;
+	margin-top: 50px;
+}
+
+#home
+{
+	color: pink;
+}
+
+#imagenDos
+{
+	width: 30%;
+	border-radius: 50%;
+}
+
+#imagenUno
+{
+	display: inline-block;
+	padding: 20px 0px 30px 0px;
+	width: 10%;
+}
+
+#seccion01art01
+{
+	color: gray;
+	font-size: 8px;
+}
+
+#cotton
+{
+	color: #F5A19C;
+	font-family: 'Tillana', cursive;
+	font-size: 13px;
+}
+
+
+
+#s
+{
+	background: #F7B6B2;
+	padding: 40px;
+	border-radius: 50%;
+}
+
+.x
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+
+
+
