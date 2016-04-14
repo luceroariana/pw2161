@@ -10,15 +10,15 @@ form
 {
 	background: #4E0F41;
 	border: 1px solid black;
-	border-radius: 5px;
-	box-shadow: 15px 15px 15px rgba(50,50,50,0.7);
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px rgba(50,50,50,0.7);
 	margin: 0 auto;
 	padding: 10px;
 	width: 300px;
 }
 form input
 {
-	border-radius: 5px;
+	border-radius: 8px;
 	font-size: 1.7em;
 }
 
@@ -32,5 +32,4 @@ form input[type="button"]
 	background: #A66F9B;
 	color: white;
 	width: 70px;
-
 }
