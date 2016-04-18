@@ -1,0 +1,22 @@
+body
+{
+	margin: 0 auto;
+	max-width: 1024px;
+	text-align: center;
+}
+
+table tr tr1d1
+{
+	width: 100px;
+	height: 100px;
+}
+
+table
+{
+	border-collapse: collapse; /*PARA QUE SE UNAN LAS LINEAS*/
+}
+
+#tr1td1, #tr1td2, #tr1td3
+{
+	border-bottom: 5px solid black;
+}
