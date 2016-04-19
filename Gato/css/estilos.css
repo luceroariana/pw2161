@@ -1,11 +1,11 @@
 body
 {
 	margin: 0 auto;
-	max-width: 1024px;
+	width: 1024px;
 	text-align: center;
 }
 
-table tr tr1d1
+table tr td
 {
 	width: 100px;
 	height: 100px;
@@ -16,7 +16,12 @@ table
 	border-collapse: collapse; /*PARA QUE SE UNAN LAS LINEAS*/
 }
 
-#tr1td1, #tr1td2, #tr1td3
+#td1, #td2, #td3, #td4, #td5, #td6
 {
 	border-bottom: 5px solid black;
+}
+
+#td1, #td4, #td7, #td2, #td5, #td8
+{
+	border-right: 5px solid black;
 }
