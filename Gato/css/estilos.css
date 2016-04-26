@@ -1,27 +1,36 @@
 body
 {
+	font-size: 16px;
 	margin: 0 auto;
-	width: 1024px;
+	max-width: 1024px;
+	color: #700F45;
+}
+
+header
+{
 	text-align: center;
 }
-
-table tr td
+section article form table
 {
+	border-collapse: collapse;
+	font-size: 5em;
+	margin: 0 auto;
+}
+section article table td
+{
+	text-align: center;
 	width: 100px;
-	height: 100px;
 }
-
-table
+#uno,#dos,#cuatro,#cinco
 {
-	border-collapse: collapse; /*PARA QUE SE UNAN LAS LINEAS*/
+	border-bottom: 8px solid #6C4E6E;
+	border-right: 8px solid #6C4E6E;
 }
-
-#td1, #td2, #td3, #td4, #td5, #td6
+#tres, #seis
 {
-	border-bottom: 5px solid black;
+	border-bottom: 8px solid #6C4E6E;
 }
-
-#td1, #td4, #td7, #td2, #td5, #td8
+#siete, #ocho
 {
-	border-right: 5px solid black;
+	border-right: 8px solid #6C4E6E;
 }

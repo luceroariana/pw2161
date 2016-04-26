@@ -1,30 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Juego del Gato</title>
+	<title>Juego del gato</title>
 	<link rel="stylesheet" href="css/estilos.css">
-	<script src= "js/gato.js"></script>
+	<script src="js/gato.js"></script>
 </head>
-<body>
-	<h1>Juego del gato</h1>
-	<table>
-		<tr>
-			<td id="td1" onclick=""></td>
-			<td id="td2" onclick=""></td>
-			<td id="td3" onclick=""></td>
-		</tr>
-		<tr>
-			<td id="td4" onclick=""></td>
-			<td id="td5" onclick=""></td>
-			<td id="td6" onclick=""></td>
-
-		</tr>
-		<tr>
-			<td id="td7" onclick=""></td>
-			<td id="td8" onclick=""></td>
-			<td id="td9" onclick=""></td>
-		</tr>
-	</table>
+<body onload="iniciaGato();">
+	<header>
+		<h1 id="tituloJuego">Juego del Gato</h1>
+	</header>
+	<section>
+		<article>
+			<form action="#" name="juegogato">
+				<table>
+					<tr>
+						<td onclick ="escribe(this.id)" id="uno">&nbsp;</td>
+						<td onclick ="escribe(this.id)" id="dos">&nbsp;</td>
+						<td onclick ="escribe(this.id)" id="tres">&nbsp;</td>
+					</tr>
+					<tr>
+						<td onclick ="escribe(this.id)" id="cuatro">&nbsp;</td>
+						<td onclick ="escribe(this.id)" id="cinco">&nbsp;</td>
+						<td onclick ="escribe(this.id)"id="seis">&nbsp;</td>
+					</tr>
+					<tr>
+						<td onclick ="escribe(this.id)" id="siete">&nbsp;</td>
+						<td onclick ="escribe(this.id)" id="ocho">&nbsp;</td>
+						<td onclick ="escribe(this.id)" id="nueve">&nbsp;</td>
+					</tr>
+				</table>
+			</form>
+			<input type="button" value="Reiniciar Juego" onclick="ReiniciarGato();">
+		</article>
+	</section>
 </body>
 </html>
