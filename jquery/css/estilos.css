@@ -1,0 +1,29 @@
+html
+{
+	background-color: rgba(112, 57, 88, 0.4);
+}
+body
+{
+	max-width: 1024px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10%;
+	font-size: 16px;
+	background-color: rgba(175, 57, 88, 0.6);
+	width: 500px;
+}
+h2
+{
+	font-family: 'Allan', cursive;
+	color: #0B345D;
+}
+#fotoPersona
+{
+	border-radius: 40%;
+}
+
+#txtNombreUser, #txtApellidoUser
+{
+	font-family: 'Nunito', sans-serif;
+	color: #182F75;
+}
