@@ -31,7 +31,7 @@ var iniciaApp = function()
 		var parammetros ="accion=validaEntrada"+
 						 "&usuario="+usuario+
 						 "&clave="+clave+
-						 "&id"+Math.random();
+						 "&id="+Math.random();
 		$.ajax({
 			beforeSend:function(){
 				console.log("Validar al usuario");
@@ -42,9 +42,18 @@ var iniciaApp = function()
 			url:"php/funciones.php", //enviar 
 			data:parametros,
 			success: function(response){
+				if(response.respuesta == true) 
+				{
+					$("#datosUsuario").hide();
+					$("nav").show("slow");
+				}
+				else
+				{
+					alert("Usuario/contraseña incorrecto(s)");
+				}
 
 			},
-			error: function(xhr, ajaxOptionx, thrownError){
+			error: function(xhr,ajaxOptionx,thrownError){
 				console.log("Algo salió mal");
 			}
 		});
