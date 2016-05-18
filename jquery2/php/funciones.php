@@ -1,5 +1,6 @@
 <?php 
 //Funciones
+
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
   $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
@@ -29,16 +30,16 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 
 function validaEntrada()
 {
-	$usuario = GetSQLValueString($_POST["usuario"], "text");
-	$clave 	 = GetSQLValueString(md5($_POST["clave"]), "texto");
+	$usuario = GetSQLValueString($_POST["usuario"],"text");
+	$clave = GetSQLValueString(md5($_POST["clave"]),"text"); //La clave se convierte a md5
 	$respuesta = false;
-	//CONECTO AL SERVIDOR DE BD
-	//SERVIDOR, USUARIO Y CLAVE
-	$conexion = mysql_connect("localhost", "root", "");
+	//Conecto el servidor de BD
+	//Servidor, usuario, clave
+	$conexion = mysql_connect("localhost","root","");
 	//Seleccionar la BD
 	mysql_select_db("cursopw");
-	$validar = sprintf("select usuario, clave from usuarios where usuario=%s and clave=%s limit 1", $usuario, $clave);
-	$resultado = mysql_query($valiar);
+	$validar = sprintf("select usuario,clave from usuarios where usuario=%s and clave=%s limit 1",$usuario,$clave);
+	$resultado = mysql_query($validar);
 	//Preguntamos si se trajo un registro
 	if(mysql_num_rows($resultado) > 0)
 		$respuesta = true;
@@ -48,15 +49,43 @@ function validaEntrada()
 
 }
 
+function guardaUsuario()
+{
+	$usuario = GetSQLValueString($_POST["txtNombreUsuario"], "text");
+	$clave 	 = GetSQLValueString(md5($_POST["txtClaveUsuario"]), "text");
+	$tipo 	 = GetSQLValueString($_POST["txtTipoUsuario"], "text");
+	$depto 	 = GetSQLValueString($_POST["txtDepartamento"], "long"); 
+	$respuesta = false;
+	//Conecto el servidor de BD
+	//Servidor, usuario, clave
+	$conexion = mysql_connect("localhost","root","");
+	//Seleccionar la BD
+	mysql_select_db("cursopw");
+	$guarda = sprintf("insert into usuarios values(%s,%s,%s,%d)",$usuario,$clave,$tipo,$depto);
+	//EJECUTAMOS LA CONSULTA
+	mysql_query($guarda);
+	//CUANTOS REGISTROS FUERON AFECTADOS
+	if(mysql_affected_rows() > 0)
+	{
+		$respuesta = true;
+	}
+	$salidaJSON = array('respuesta' => $respuesta);
+	print json_encode($salidaJSON);
+}
+
+//Las variables en php empiezan con "$"
 $accion = $_POST["accion"];
-//MENÚ PRINCIPAL
+//Menu principal
 switch ($accion) {
-	case 'validaEntrada':
-		validaEntrada();
+	case 'validarEntrada':
+		validaEntrada(); //Se ejecuta la funcion
 		break;
-	
+	case 'guardaUsuario':
+		guardaUsuario();
+		break;
 	default:
 		# code...
 		break;
 }
 ?>
+

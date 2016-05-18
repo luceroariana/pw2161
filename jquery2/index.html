@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,37 +11,51 @@
 </head>
 <body>
 	<header>
-		<h1>Sistema de ejemplo</h1>
+		<h1>Sistema de Ejemplo</h1>
 		<nav>
 			<ul>
-				<li> <button class="btn btn-default">Inicio</button></li>
-				<li> <button class="btn btn-primary">Altas</button></li>
-				<li> <button class="btn btn-primary">Bajas</button></li>
-				<li> <button class="btn btn-warning">Cambios</button></li>
-				<li> <button class="btn btn-danger">Consultas</button></li>
-				<li> <button class="btn btn-info">Salir</button></li>
+				<li><button class="btn btn-default">Inicio</li>
+				<li><button id="btnAltas" class="btn btn-primary">Altas</li>
+				<li><button class="btn btn-primary">Bajas</li>
+				<li><button class="btn btn-warning">Cambios</li>
+				<li><button class="btn btn-danger">Consultas</li>
+				<li><button class="btn btn-info">Salir</li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<section>
 			<article>
-				<article class="panel panel-primary" id="datosUsuario">
-				  <article class="panel-heading">
-				    <h3 class="panel-title">Proporcione sus datos</h3>
-				  </article>
-				  <article class="panel-body">
-				    <form action="#" id="frmValidaEntrada">
-				    	<input type="text" id="txtUsuario" required placeholder="Usuario" class="form-control" autofocus>
-				    	<input type="password" id="txtClave" required placeholder="Contraseña" class="form-control">
-				    	<input type="submit" class="btn btn-success btn-lg btn-block" value="Entrar"></button>
-				    </form>
-				  </article>
-				</article>
+					<article class="panel panel-primary" id="datosUsuario"> 
+					    <article class="panel-heading">
+		 				   <h3 class="panel-title">Proporcione sus datos</h3>
+		  				</article>
+		  				<article class="panel-body">
+		 				   <form action="#" id="frmValidaEntrada">
+		 				   	<input type="text" id="txtUsuario" required placeholder="Usuario" class="form-control" autofocus>
+		 				   	<input type="password" id="txtClave" required placeholder="Contraseña" class="form-control">
+		 				   	<input type="submit" class="btn btn-success btn-lg btn-block" value="Entrar">
+		 				   </form>
+		 				 </article>
+					</article>
 			</article>
 		</section>
+		<secion>
+			<article id="altaUsuarios">
+				<h2>Alta de Usuarios</h2>
+				<form action="#" id="frmAltaUsuarios" name="frmAltaUsuarios">
+					<input type="text" class="form-control" id="txtNombreUsuario" placeholder="Usuario" required>
+					<input type="password" class="form-control" id="txtClaveUsuario" placeholder="Clave" name="txtClaveUsuario"required>
+					<select name="txtTipoUsuario" id="txtTipoUsuario" class="form-control">
+						<option value="vigente">Vigente</option>
+						<option value="baja">Baja</option>
+					</select>
+					<input type="text" class="form-control" id="txtDepartamento" name="txtDepartamento" placeholder="Departamento" required>
+					<input type="submit" id="btnAltaUsuario" name="btnAltaUsuario" class="btn btn-succes btn-lg btn-block" required>
+				</form>
+			</article>
+		</secion>
 	</main>
 	<footer></footer>
-
 </body>
 </html>
