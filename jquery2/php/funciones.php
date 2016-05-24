@@ -111,6 +111,7 @@ function consultas()
 			$tabla.="<td>".$registro["usuario"]."</td>";
 			$tabla.="<td>".$registro["tipousuario"]."</td>";
 			$tabla.="<td>".$registro["departamento"]."</td>";
+			$tabla.="<td><button id='".$registro["usuario"]."' class='btn btn-danger' >Baja</button></td>";
 			$tabla.="</tr>";
 		}
 	}

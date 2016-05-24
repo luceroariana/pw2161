@@ -164,12 +164,21 @@ var iniciaApp = function()
 			}
 		});
 	}
+	var BajaDinamica = function()
+	{
+		var usuario = $(this).attr("id");
+		alert(usuario);
+	}
 
 	$("#frmValidaEntrada").on("submit",validarEntrada);
 	$("#btnAltas").on("click",Altas);
 	$("#frmAltaUsuarios").on("submit",AltaUsuario);
 	$("#btnBajas").on("click",Bajas);
 	$("#btnConsultas").on("click",Consultas);
+	//EVENTOS DIÁMICOS
+	$("#tablaConsultas").on("click","button",BajaDinamica);
+	//OTRA FORMA
+	//$("#tablaConsultas > input").on("click",BajaDinamica);
 }
 $(document).on("ready",iniciaApp);
 
